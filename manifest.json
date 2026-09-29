@@ -1,0 +1,10 @@
+{
+  "name": "堵到家 · 国庆高速堵车模拟器",
+  "short_name": "堵到家",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF6E5",
+  "theme_color": "#FF6A2B",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

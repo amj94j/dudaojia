@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#FF6A2B" />
+    <meta name="description" content="国庆长假高速堵车模拟器：变道抢空档、躲加塞、进服务区，在假期结束前开回家。" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="堵到家" />
+    <title>堵到家 · 国庆高速堵车模拟器</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:title" content="堵到家 · 国庆高速堵车模拟器" />
+    <meta property="og:image" content="share.png" />
+    <link rel="manifest" href="manifest.json" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #2b2118;
+        overflow: hidden;
+        overscroll-behavior: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      canvas {
+        display: block;
+        touch-action: none;
+        background: #fff6e5;
+      }
+      noscript {
+        color: #fff;
+        font: 16px/1.6 sans-serif;
+        padding: 40px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 微信里直接转发链接时，会取页面第一张足够大的图片做缩略图 -->
+    <div style="position: absolute; left: -9999px; top: 0" aria-hidden="true"><img src="share.png" width="300" height="300" alt="" /></div>
+    <canvas id="game" aria-label="堵到家游戏画面"></canvas>
+    <noscript>《堵到家》需要开启 JavaScript 才能游玩。</noscript>
+    <script src="main.js"></script>
+  </body>
+</html>
